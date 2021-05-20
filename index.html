@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+
+    <title>ISS Tracker</title>
+    <!--<meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint"> -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+
+    <link rel="stylesheet" href="css/header_footer.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <!--Import -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+
+    
+
+</head>
+<body>
+    
+    <!-- Header-->
+    <header>
+        <h1><img src="img/ISS.png">ISS Tracker<img src="img/ISS.png"></h1>
+    </header>
+
+    <!--Main-->
+    <main scroll="no">
+        <div id="map">
+
+        </div>
+        <div class="table">
+        <p> Breitengrad: <span id="lat"></span>°<br>
+            Längengrad: <span id="lon"></span>°<br>
+            Geschwindigkeit: <span id="velo"></span> Km/h
+        </p>
+        </div>
+        <div class="timeline">
+        <a class="twitter-timeline" data-height="600" href="https://twitter.com/Space_Station?ref_src=twsrc%5Etfw">Tweets by Space_Station</a> 
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+        </div>
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <a href="about.html">About</a>
+        Made by Mahler 2021
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+<!--<img src="img/ISS.png">-->
